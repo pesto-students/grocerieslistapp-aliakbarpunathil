@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/custom.css">
+<!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<div class="jumbotron" >
+		<h1 class="text-centered">GROCERY LIST APP</h1>
+	</div>
+<div id="home">
+	<button id="loginBtn" >Login</button>
+	<button id="signUpBtn" >Sign Up</button>
+</div>
+<div id="loginModal" class="modal">
+  <div class="modal-content animate" >
+    <div class="loginHeader">
+      <span class="close" title="Close Modal">&times;</span>
+	<h1>Login</h1>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" id="loginUname" required>
+
+      <label for="pw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="loginPw" required>
+        
+      <button type="submit" id="loginSubmit">Login</button>
+     
+    </div>
+
+    
+  </div>
+  
+  
+</div><div id="signUpModal" class="modal">
+  <div class="modal-content animate" >
+    <div class="loginHeader">
+      <span class="close" title="Close Modal">&times;</span>
+	<h1>Sign Up</h1>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" id="uname" required>
+
+      <label for="pw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="pw" required>
+ 
+		  
+      <button type="submit" id="signUpSubmit">Sign Up</button>
+     
+    </div>
+
+    
+  </div>
+</div>
+
+<script src="./js/custom.js"></script>
+
+</body>
+</html>
