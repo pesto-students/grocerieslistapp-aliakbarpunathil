@@ -1,0 +1,60 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>
+</title>
+<link rel="stylesheet" href="./css/custom.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container" >
+	<div class="jumbotron bg-dark" >
+		<h1 class="text-center">GROCERY LIST APP</h1>
+	</div>
+
+
+	<div class="row">
+		<div class = "col-sm-11">
+			<textarea row = "1" style="width:100%;" id = "groceryContent"></textarea>
+		</div>
+
+		<div class = "col-sm-1">
+			<input type="button" name="add" id = "add_grocery_btn" value="+">
+		</div>
+		
+	</div>
+	<div class="panel-group" id = "groceryList">
+		
+	</div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="myModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title text-center">Edit Grocery Item</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		
+			<label> Grocery Item : </label>
+			<input type="hidden" id="groceryDivId">
+			<input type="text" id = "groceryListItem">
+		
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="editSave" data-dismiss="modal">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="./js/custom.js"></script>
+
+</body>
+</html>
